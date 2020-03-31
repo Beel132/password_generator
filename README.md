@@ -26,7 +26,7 @@ On `Generate` click, you should see you beautiful password. If you don't like, y
 ## Made with
 
 * HTML
-* SASS
+* SCSS
 * Jquery
 
 > Coded with VS Code
