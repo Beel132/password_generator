@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4603725681.js"></script>
+
+    <title>password generator</title>
+</head>
+
+<body>
+    <section id="container">
+        <h1 class="title">Password Generator</h1>
+
+        <!-- toast -->
+        <div id="alert" class="right"></div>
+        <!-- <div id="alert" class="left"></div> -->
+        <!--  -->
+
+        <!-- Toggle mode -->
+        <div class="toggle--container">
+            <div class="toggle--icon" onclick="toggle_mode()">
+                <i class="fas fa-moon fa-lg"></i>
+            </div>
+        </div>
+        <!--  -->
+
+        <div id="result--container">
+            <input type="text" id="result" readonly />
+            <div id="copy--container">
+                <div class="icon--container">
+                    <i class="fas fa-copy"></i>
+                </div>
+                <p class="copy-text">Copy</p>
+            </div>
+        </div>
+
+        <button class="btn" id="clear">clear</button>
+
+        <div class="choose--hold">
+            <p>Password's length</p>
+            <input type="number" class="choose" placeholder="8" id="password_length" data-default='8' min="1" max="50"
+                required />
+        </div>
+
+        <div id="user--selection__container">
+            <div class="input--container">
+                <input id="upper" type="checkbox" />
+                <label for="upper">Uppercase letters</label>
+            </div>
+
+            <div class="input--container">
+                <input id="lower" type="checkbox" checked />
+                <label for="lower">Lowercase letters</label>
+            </div>
+
+            <div class="input--container">
+                <input id="number" type="checkbox" />
+                <label for="number">Numbers</label>
+            </div>
+
+            <div class="input--container disabled">
+                <input id="colorful" type="checkbox" disabled />
+                <label for="colorful">Colorful password</label>
+            </div>
+            <!-- <p class="desc">coming soon!</p> -->
+
+            <div class="input--container">
+                <input id="symbol" type="checkbox" />
+                <label for="symbol">Symbols</label>
+            </div>
+        </div>
+
+        <button class="btn" id="generate">Generate</button>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
