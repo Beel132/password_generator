@@ -204,8 +204,8 @@
 }
 
 .color {
-  color: var(--primary) !important;
-  font-weight: 500 !important;
+  color: var(--tertiary) !important;
+  font-weight: 700 !important;
 }
 
 .title {
@@ -219,20 +219,16 @@
 }
 
 .desc {
+  opacity: .75;
   color: var(--dark-color) !important;
   letter-spacing: .5px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: rgba(var(--shadow), 0.5) !important;
-  font-weight: 600 !important;
+  font-weight: bold !important;
   font-size: .8rem;
   margin: 5px;
-}
-
-.highlight {
-  font-size: 10rem;
 }
 
 .btn {
@@ -611,7 +607,7 @@ body {
           align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin: 0 0 20px 0;
+  margin: 0 0 5px 0;
   font-weight: bold;
   letter-spacing: 1px;
 }

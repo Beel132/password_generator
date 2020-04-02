@@ -31,7 +31,7 @@ document.addEventListener(
 
 function generate_password(element, compare, place_to_write, password_length, array = []) {
     if (password_length > 50) {
-        alert('password length has to be less than 50')
+        alert('password length must be less than 50');
         return;
     }
 
@@ -44,10 +44,10 @@ function generate_password(element, compare, place_to_write, password_length, ar
         return;
     }
 
-    write_password(array, place_to_write, password_length, compare);
+    write_password(array, place_to_write, password_length);
 }
 
-function write_password(result_array, place_to_write, password_length, compare) {
+function write_password(result_array, place_to_write, password_length) {
     let result_string = '';
 
     for (let i = 0; i < password_length; i++)
